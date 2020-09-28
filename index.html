@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange | FX99.io</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/index.css?1601267251">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  />
+</head>
+<body>  
+  <header class="header">
+    <div class="container">
+      <div class="header-item">
+        <a href="/" class="logo">
+          <img src="/img/logo.svg" alt="">
+        </a>
+        <div class="menu">
+          <a href="/" class="">Home</a>
+          <a href="/" class=" active">EXCHANGE</a>
+          <a target="_blank" href="https://kovan.etherscan.io/address/0xb26CAB615fBFdDFF940320e64dbbeF08DCc77386">CONTRACT</a>
+          <a href="https://fx99.io/faq" class="">FAQ</a>
+        </div>
+        <a data-fancybox data-src="#hidden-content" href="javascript:;" class="menu_open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+       
+      <div class="header-item">
+        
+        <div class="live-price">
+          <img class="eth-img" src="/img/ethereum.png" alt="">
+          <div class="text">
+            <span>Live Ethereum Price/Gwei</span>
+            <p>$ USD : <span data-id="ethPrice" class="inline">329.19</span> / Gwei <span data-id="gasPrice" class="inline"></span>  <img src="/img/benz.svg" alt=""></p>
+          </div>
+        </div>
+        <a href="https://fx99.io/" class="btn">WEB SITE</a>
+      </div>
+    </div>
+  </header>  <div class="intro">
+    <div class="container">
+      <span>Exchange</span>
+      <p>You can see and transact Fx99 smart contract details, your Holdings, your Withdrawal, Reinvest, Dual Dividends Withdraw, Buy and Sell over here. You can also see your wallet address and referral link in this section too. Refresh the page once Metamask or Trustwallet is connected.      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div data-id="isweb3" class="hidden">
+        <a href="" class="btn-green">MetaMask or Trust wallet is unlocked/connected</a>
+      </div>
+      <div data-id="isweb3" class="hidden w-100">
+        <div class="btns-good-green">
+          <div class="box">
+            <div class="text">
+              <div class="text-item">
+                <span>Wallet address</span>
+                <span><span data-id="walletAddress"></span><i class="fas fa-id-card"></i></span>
+              </div>
+              <div class="text-item">
+                <span>Balance</span>
+                <span><b><span data-id="walletBalance"></span> ETH</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="txt">
+              <span><i class="far fa-clock"></i></span><br>
+              <a href="#">Running for <span data-id="start"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  data-id="noweb3">
+        <a href="" class="btn-red">MetaMask or Trust wallet is not unlocked/connected</a>
+        <div class="btns-dwnload">
+          <a href="https://metamask.io/download.html">
+            <img src="/img/metamask-logo-1.svg" alt="">
+            Download Metamask          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&hl=en">
+            <img src="/img/metamask-logo-2.svg" alt="">
+            Download Trust Wallet          </a>
+        </div>
+      </div>
+      <div class="title">
+        Smart Contract      </div>
+      <div class="boxs">
+        <div class="box">
+          <img src="/img/icon/blue_logo.svg" alt="">
+          <div class="text">
+            <span>Circulation of Token</span>
+            <p data-id="globalTokens"></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/ethereum.png" alt="">
+          <div class="text">
+            <span>Smart Contract Balance <span data-id="globalEth" class="sideMargin"></span> ETH</span>
+            <p>$ USD <span data-id="globalUsd" class="inline"></span></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/ethereum.png" alt="">
+          <div class="text">
+            <span>99 Strong Hand Wallet <span data-id="strongEth" class="sideMargin"></span> ETH</span>
+            <p>$ USD <span data-id="strongUsd" class="inline"></span></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/ethereum.png" alt="">
+          <div class="text">
+            <span>Live Ethereum Price/Gwei</span>
+            <p>$ USD 329.19 / Gwei <span data-id="gasPrice" class="inline"></span> <img src="/img/benz.svg" alt=""></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/ethereum.png" alt="">
+          <div class="text">
+            <span>Buy Price <span data-id="buyPriceEth" class="sideMargin"></span> ETH</span>
+            <p>$ USD <span data-id="buyPriceUsd" class="inline"></span></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/img/ethereum.png" alt="">
+          <div class="text">
+            <span>Sell Price <span data-id="sellPriceEth" class="sideMargin"></span> ETH</span>
+            <p>$ USD <span data-id="sellPriceUsd" class="inline"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section2">
+    <div class="container">
+
+      <div class="title">Holdings</div>
+      <div class="boxs">
+        <div class="box">
+          <p>XCIX Token</p>
+          <p>Balance </p>
+          <p data-id="walletTokens">0</p>
+        </div>
+        <div class="box">
+          <p>Dual </p>
+          <p>Dividends </p>
+          <p data-id="walletDualDividends">0</p>
+        </div>
+                <div class="box">
+          <p>Referral</p>
+          <p>Dividend </p>
+          <p data-id="walletReferralDividends">0</p>
+        </div>
+        <div class="box">
+          <p>Dividends</p>          
+          <p data-id="walletDividends">0</p>
+        </div>
+        <div class="box">
+          <p>Estimated</p>
+          <p>Value of Tokens</p>
+          <p data-id="estimatedTokensValue">0</p>
+        </div>
+      </div>
+      <div class="title">Exchange</div>
+      <div class="boxs-exch">
+                 <div class="box" data-show="buy">
+           <div class="border">
+             <img src="/img/icon/Buy.png" alt="">
+           </div>
+           <span>Buy</span>
+         </div>
+         <div class="box box-l" data-show="sell">
+           <div class="border">
+             <img src="/img/icon/SEll.png" alt="">
+           </div>
+           <span>Sell</span>
+         </div>
+         <div class="box" data-show="reinvest">
+           <div class="border">
+             <img src="/img/icon/Return.png" alt="">
+           </div>
+           <span>Reinvest</span>
+         </div>
+         <div class="box" data-show="dualWithdraw">
+           <div class="border">
+             <img src="/img/icon/Withdraw.svg" alt="">
+           </div>
+           <span>Dual Dividends Withdraw</span>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section3">
+    <div class="container">
+      <form data-id="dualWithdraw" action="" class="form hidden exchange-form">
+        <div class="form-item">
+          <span>ETH</span>
+          <div class="item-input">
+            <input type="text" data-id="dualWithdrawGet" readonly>
+            <img src="/img/ethereum.png" alt="">
+          </div>          
+        </div>        
+        <input type="button" class="btn" value="Dual dividends withdraw" data-id="dualWithdrawButton">
+        <div class="messageBody messageDualWithdraw"><div></div></div>
+      </form>
+      <form data-id="reinvest" action="" class="form hidden exchange-form">
+        <div class="form-item">
+          <span>ETH</span>
+          <div class="item-input">
+            <input type="text" data-id="reinvestGet" readonly>
+            <img src="/img/ethereum.png" alt="">
+          </div>          
+        </div>        
+        <input type="button" class="btn blue" value="Reinvest" data-id="reinvestButton">
+        <div class="messageBody messageReinvest"><div></div></div>
+      </form>
+      <form data-id="buy" action="" class="form-trans hidden exchange-form">
+        <div class="form-item">
+          <div class="form-item-50">
+            <span>ETH</span>
+            <div class="item-input">
+              <input type="text" data-id="buyPay">
+              <img src="/img/ethereum.png" alt="">
+            </div>
+          </div>
+          <img class="img-transfer" src="/img/icon/TRANSFER.svg" alt="">
+          <div class="form-item-50">
+            <span>XCIX</span>
+            <div class="item-input">
+              <input type="text" data-id="buyGet" readonly>
+              <img src="/img/icon/logo-b.svg" alt="">
+            </div>
+          </div>
+        </div>        
+        <input type="button" class="btn blue" value="Buy" data-id="buyButton">
+        <div class="messageBody messageBuy"><div></div></div>
+      </form>
+      <form data-id="sell" action="" class="form-trans hidden exchange-form">
+        <div class="form-item">
+          <div class="form-item-50">
+            <span>XCIX</span>
+            <div class="item-input">
+              <input type="text" data-id="sellPay">
+              <img src="/img/icon/logo-b.svg" alt="">
+            </div>
+          </div>
+          <img class="img-transfer" src="/img/icon/TRANSFER.svg" alt="">
+          <div class="form-item-50">
+            <span>ETH</span>
+            <div class="item-input">
+              <input type="text" data-id="sellGet" readonly>
+              <img src="/img/ethereum.png" alt="">
+            </div>
+          </div>
+        </div>      
+        <input type="button" class="btn red" value="Sell" data-id="sellButton">
+        <div class="messageBody messageSell"><div></div></div>
+      </form>
+      <div class="title">Transfer</div>
+      <form action="" class="form-trans">
+        <div class="form-item">
+          <div class="form-item-50">
+            <span>XCIX</span>
+            <div class="item-input">
+              <input type="text" data-id="transferAmount">
+              <img src="/img/icon/logo-b.svg" alt="">
+            </div>
+          </div>
+          <img class="img-transfer" src="/img/icon/TRANSFER.svg" alt="">
+          <div class="form-item-50">
+            <span>XCIX</span>
+            <div class="item-input">
+              <input type="text" data-id="transferRealAmount" readonly>
+              <img src="/img/icon/logo-b.svg" alt="">
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="form-item-dwn">
+          <span>Wallet address</span>
+          <div class="item-input">
+            <input type="text" data-id="transferAddress">             
+          </div>
+        </div>
+        
+        <input type="button" class="btn" value="Transfer" data-id="transferButton">
+        <div class="messageBody messageTransfer"><div></div></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section4">
+    <div class="container">
+
+      <form action="" class="form-trans">
+        <div class="title">Referral Link</div>
+        <a href="" class="up-a">Use Your Referral Link & Get 5% Referral Reward</a>
+        <div class="form-item-dwn">
+          <div class="item-input">
+            <input data-id="refLink" type="text" data-message="Copied to clipboard">
+            <img src="/img/icon/Subtract.svg" class="copy" alt="">
+          </div>
+        </div>
+        <a href="">Note - Your referral link does not become active until you have 99 XCIX</a>
+
+        <div class="messageBody messageLink"><div></div></div>
+
+        <div class="social">
+          <a href="#">
+            <img src="/img/icon/telegram.png" alt="">
+          </a>
+          <a href="#">
+            <img src="/img/icon/twitter.png" alt="">
+          </a>
+          <a href="#">
+            <img src="/img/icon/Youtube.png" alt="">
+          </a>
+          <a href="#">
+            <img src="/img/icon/cate.png" alt="">
+          </a>
+        </div>
+      </form>
+    </div>
+  </section>  <footer class="footer">
+    <div class="container">
+      <a href="" class="logo">
+        <img src="/img/logo-f.png" alt="">
+      </a>
+      <div class="menu">
+        <a href="/">HOME</a>
+        <a href="/">EXCHANGE</a>
+        <a target="_blank" href="https://kovan.etherscan.io/address/0xb26CAB615fBFdDFF940320e64dbbeF08DCc77386">CONTRACT</a>
+        <a href="https://fx99.io/faq">FAQ</a>
+      </div>
+      <a data-fancybox data-src="#hidden-content" href="javascript:;" class="menu_open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <div class="social">
+        <a href="#">
+          <img src="/img/icon/telegram-f.png" alt="">
+        </a>
+        <a href="#">
+          <img src="/img/icon/twitter-f.png" alt="">
+        </a>
+        <a href="#">
+          <img src="/img/icon/Youtube-f.png" alt="">
+        </a>
+        <a href="#">
+          <img src="/img/icon/cate-f.png" alt="">
+        </a>
+        <a href="#">
+          <img src="/img/icon/mess.png" alt="">
+        </a>
+      </div>
+    </div>
+    <span>© 2020. Fx99.io. All rights reserved.</span>
+  </footer>
+
+  <div style="display: none;" id="hidden-content">
+    <div class="cont">
+      <div class="menu">
+        <a href="/">HOME</a>
+        <a href="/">EXCHANGE</a>
+        <a target="_blank" href="https://kovan.etherscan.io/address/0xb26CAB615fBFdDFF940320e64dbbeF08DCc77386">
+          CONTRACT            
+        </a>
+        <a href="https://fx99.io/faq">FAQ</a>
+      </div>
+
+      <div class="live-price">
+        <img class="eth-img" src="/img/ethereum.png" alt="">
+        <div class="text">
+          <span>Live Ethereum Price/Gwei</span>
+          <p>$ USD : 329.19 / Gwei <span data-id="gasPrice" class="inline"></span>  <img src="/img/benz.svg" alt=""></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <input type="hidden" data-id="contractAddress" value="0xb26CAB615fBFdDFF940320e64dbbeF08DCc77386">
+  <input type="hidden" data-id="network" value="kovan">
+  <input type="hidden" data-id="referrer" value="0x0000000000000000000000000000000000000000">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="/js/index.js?1601267251"></script>
+</body>
+</html>
