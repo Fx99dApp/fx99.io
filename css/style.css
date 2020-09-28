@@ -135,7 +135,7 @@ a {
   left: 0;
   top: -20%;
   z-index: -2;
-  background: url("/img/intro.png") center no-repeat;
+  background: url("/fx99.io/img/intro.png") center no-repeat;
   background-size: 100% 100%;
 }
 .intro .container {
@@ -180,7 +180,7 @@ a {
   left: 0;
   top: 0;
   z-index: -1;
-  background: url("/img/intro-faq.png") center no-repeat;
+  background: url("/fx99.io/img/intro-faq.png") center no-repeat;
   background-size: cover;
   pointer-events: none;
 }
@@ -226,7 +226,7 @@ a {
   left: 0;
   bottom: -250px;
   z-index: 2;
-  background: url("/img/bg.png") center no-repeat;
+  background: url("/fx99.io/img/bg.png") center no-repeat;
   background-size: cover;
   pointer-events: none;
 }
@@ -361,7 +361,7 @@ a {
   left: 0;
   bottom: 0;
   z-index: 2;
-  background: url("/img/bg-2.png") center no-repeat;
+  background: url("/fx99.io/img/bg-2.png") center no-repeat;
   background-size: cover;
   pointer-events: none;
 }
@@ -519,7 +519,7 @@ a {
   left: 0;
   bottom: -50px;
   z-index: 2;
-  background: url("/img/bg-3.png") center no-repeat;
+  background: url("/fx99.io/img/bg-3.png") center no-repeat;
   background-size: cover;
   pointer-events: none;
 }
@@ -580,7 +580,7 @@ a {
   right: 10px;
   top: 22px;
   z-index: 2;
-  background: url("/img/ethereum.png") center no-repeat;
+  background: url("/fx99.io/img/ethereum.png") center no-repeat;
   background-size: cover;
 }
 .section3 .container .form .btn {
@@ -747,7 +747,7 @@ a {
   width: 100%;
   min-height: 80vh;
   background: #f1edf9;
-  background: url("/img/bg-4.png") center no-repeat;
+  background: url("/fx99.io/img/bg-4.png") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -893,7 +893,7 @@ a {
   left: 0;
   top: 0px;
   z-index: 2;
-  background: url("/img/bg-faq.png") center no-repeat;
+  background: url("/fx99.io/img/bg-faq.png") center no-repeat;
   background-size: contain;
   pointer-events: none;
 }
@@ -975,7 +975,7 @@ a {
 .section-faq-1 .container summary:before {
   content: "";
   color: transparent;
-  background: url("/img/icon/dwn.png") no-repeat 50% 50%/0.6em 0.6em;
+  background: url("/fx99.io/img/icon/dwn.png") no-repeat 50% 50%/0.6em 0.6em;
   background-size: 100% 60%;
   width: 1em;
   height: 1em;
@@ -1028,7 +1028,7 @@ a {
   left: 0;
   top: -90px;
   z-index: 2;
-  background: url("/img/bg-need.png") center no-repeat;
+  background: url("/fx99.io/img/bg-need.png") center no-repeat;
   background-size: 100% 100%;
   pointer-events: none;
 }
