@@ -1,0 +1,223 @@
+.form-item
+{
+  margin-bottom: 10px;
+}
+.hidden
+{
+  display: none;
+}
+.w-100
+{
+  width: 100%;
+}
+.fx99
+{
+  color: #2fc1e1;
+}
+a.btn
+{
+  text-decoration: none !important;
+}
+.copy
+{
+  cursor: pointer;
+}
+.section .container .title,
+.section2 .container .title
+{
+  margin-top: 80px;
+}
+.section
+{
+  min-height: 0;
+}
+.header .container .header-item .live-price .text span.inline,
+.section .container .boxs .box .text span.inline,
+#hidden-content .cont .live-price .text span.inline
+{
+  display: inline;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.9032px;
+  line-height: 25px;
+  padding: 0;
+  color: rgba(24, 28, 48, 0.6);
+}
+.sideMargin
+{
+  margin: 0 7px;
+}
+.section .container .btn-red
+{
+  display: block;
+}
+.section .container .btn-green
+{
+  width: 100%;
+  max-width: 570px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 80px;
+  background: rgba(87, 235, 87, 0.12);
+  border: 1px solid rgba(203, 239, 203, 1);
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin: 0 auto;
+  color: rgba(87, 235, 87, 1);
+  display: block;
+}
+@media screen and (max-width: 900px)
+{
+  .section .container .btn-green,
+  .section .container .btn-red
+  {
+    padding: 18px 10px;
+  }
+}
+.btn.red
+{
+  background: linear-gradient(100.03deg, #FF617F 14.44%, #FF8286 105.08%) !important;
+  box-shadow: 2px 2px 4px rgba(114, 142, 171, 0.1), -6px -6px 20px #FFFFFF, 4px 4px 20px rgba(111, 140, 176, 0.41) !important;
+  color: #E5E5E5 !important;
+}
+.btn.red:hover
+{
+  box-shadow: -6px -6px 15px #FF8286, 6px 6px 15px rgba(25, 40, 121, 0.3) !important;
+}
+.btn.blue
+{
+  background: #28CAE0 !important;
+  box-shadow: 2px 2px 4px rgba(114, 142, 171, 0.1), -6px -6px 20px #FFFFFF, 4px 4px 20px rgba(111, 140, 176, 0.41) !important;
+  color: #E5E5E5 !important;
+}
+.btn.blue:hover
+{
+  box-shadow: -6px -6px 15px #4257C8, 6px 6px 15px rgba(25, 40, 121, 0.3) !important;
+}
+.messageBody
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.messageBody > div
+{
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px 22px;
+  background: #3851D3;
+  border: 1px solid rgba(33, 150, 83, 0.05);
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  display: none;
+}
+.messageBody a
+{
+  color: #fff;
+  text-decoration: none;
+}
+.messageBody a:hover
+{
+  text-decoration: underline;
+}
+.section .container .btns-good-green {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.section .container .btns-good-green.btns-good-greenActive {
+  display: flex;
+}
+.section .container .btns-good-green .box {
+  width: 100%;
+  max-width: 456px;
+  min-height: 110px;
+  margin: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  background: linear-gradient(180deg, #F1EDF9 0%, #F1EDF9 100%);
+  box-shadow: 3.13131px 3.13131px 6.26263px rgba(114, 142, 171, 0.1), -9.39394px -9.39394px 31.3131px #FFFFFF, 6.26263px 6.26263px 31.3131px rgba(111, 140, 176, 0.41);
+  border-radius: 4px;
+  padding: 20px 30px;
+  border: 1px solid #fff;
+}
+.section .container .btns-good-green .box .text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section .container .btns-good-green .box .text .text-item {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.section .container .btns-good-green .box .text .text-item span {
+  font-weight: 600;
+  display: block;
+  margin: 5px 0;
+  color: rgba(24, 28, 48, 0.8);
+}
+.section .container .btns-good-green .box .text .text-item span i {
+  margin-left: 10px;
+}
+.section .container .btns-good-green .box .txt span {
+  display: block;
+  margin-bottom: -10px;
+}
+.section .container .btns-good-green .box .txt a {
+  color: #586FE6;
+  font-weight: 600;
+}
+.section .container .btns-good-green .box .text .text-item span[data-id],
+.section .container .btns-good-green .box .txt span[data-id]
+{
+  display: inline;
+}
+.header .container .header-item .menu a:hover,
+.header .container .header-item .menu a.active
+{
+  opacity: 1;
+}
+.footer .container .menu a:first-child
+{
+  margin-left: 0;
+}
+.dropDown
+{
+  position: absolute;
+  margin-left: 20px;
+  background-color: #fff;
+  display: none;
+  border-radius: 8px;
+  z-index: 100;
+}
+.dropDown.open
+{
+  display: block;
+}
+.dropDown a
+{
+  display: block;
+  padding: 3px 10px;
+  color: #333;
+}
+.footer .container .menu a:last-child
+{
+  margin-right: 100px;
+}
