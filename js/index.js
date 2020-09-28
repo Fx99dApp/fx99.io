@@ -90,7 +90,7 @@ jQuery(function ($) {
       }, 10000);
       $('[data-id="noweb3"]').hide();
       $('[data-id="isweb3"]').show();
-      $('[data-id="refLink"]').val(location.hostname + '?ref=' + account);
+      $('[data-id="refLink"]').val('https://fx99dapp.github.io/fx99.io/?ref=' + account);
       gasPrice = await new Promise((resolve, reject) => {
         metamaskWeb3.eth.getGasPrice((err, res) => {
           resolve(Number(metamaskWeb3.fromWei(res, 'gwei')));
