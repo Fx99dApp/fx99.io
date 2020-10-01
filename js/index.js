@@ -68,6 +68,21 @@ jQuery(function ($) {
   }
 
   async function init () {
+    await new Promise(function (resolve, reject) {      
+      $.get('https://api.coinbase.com/v2/exchange-rates?currency=ETH', function (response) {
+        if (response
+          && response.data
+          && response.data.rates
+          && response.data.rates.USD) {
+          var rate = parseFloat(response.data.rates.USD);
+          if (rate > 0) {
+            ethPrice = rate
+            $('[data-id="ethPrice"]').text(rate);
+          }
+          resolve(true);
+        }
+      });
+    });
     await startMetamask();
     if (metamaskWeb3.eth.accounts[0]) {
       contract = metamaskWeb3.eth.contract(contractAbi).at(contractAddress);
